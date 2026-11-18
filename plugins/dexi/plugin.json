@@ -1,0 +1,55 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dexi",
+  "version": "1.0.5",
+  "description": "Connect ChatGPT and Codex to your Dexi notes — the memory you share with every AI assistant: search and capture knowledge mid-conversation, and run spaced-repetition reviews on your due cards",
+  "author": {
+    "name": "Dexi",
+    "email": "team@dexi.net",
+    "url": "https://dexi.net"
+  },
+  "homepage": "https://docs.dexi.net/mcp/overview",
+  "repository": "https://github.com/dexi/openai-plugin",
+  "license": "MIT",
+  "keywords": [
+    "notes",
+    "knowledge-base",
+    "note-taking",
+    "mcp",
+    "spaced-repetition",
+    "bookmarks",
+    "second-brain"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Dexi",
+        "shortDescription": "Your notes as shared memory",
+        "longDescription": "Dexi is a second brain for you and your AI agents: notes, bookmarks, highlights, emailed-in articles and RSS feeds, all searchable by keyword and by meaning — and one memory that ChatGPT, Codex and your other MCP-compatible tools read and write, so what one saves the others can find.\n\nWith this plugin, ChatGPT and Codex can answer from what you have actually saved instead of the open internet. Ask what your notes say about a topic, pull up a saved article, file a finding or decision from the current conversation as a new note, or run a spaced-repetition review session on your due cards.\n\nEverything goes through the Dexi MCP server over OAuth: you approve the connection on Dexi's own sign-in page, can limit it to a single folder or tag, and can revoke it any time from Settings → Connected apps. Writes only happen when you ask for them.\n\nIncluded skills:\n• Capture — distill a finding, decision, snippet or link into a well-titled, tagged note.\n• Recall — search your notes by keyword and by meaning, read the full text of what matters, and answer from it with links back to each note.\n• Review — a question-first spaced-repetition session over your due cards, grades recorded back to Dexi.\n\nA Dexi account is required.",
+        "developerName": "Dexi",
+        "category": "Productivity",
+        "capabilities": [
+          "Search notes by keyword",
+          "Search notes by meaning",
+          "Read saved bookmarks and articles",
+          "Create notes",
+          "Update notes",
+          "Run spaced-repetition reviews",
+          "Query saved database views"
+        ],
+        "websiteURL": "https://dexi.net",
+        "supportURL": "https://dexi.net/support",
+        "privacyPolicyURL": "https://dexi.net/privacy",
+        "termsOfServiceURL": "https://dexi.net/terms",
+        "defaultPrompt": [
+          "What do my Dexi notes say about remote work?",
+          "Save this conversation's conclusion to my Dexi notes",
+          "Start a Dexi review session"
+        ],
+        "brandColor": "#5B6ABF",
+        "composerIcon": "./assets/icon-128.png",
+        "logo": "./assets/logo-512.png"
+      }
+    }
+  }
+}

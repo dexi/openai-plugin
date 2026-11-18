@@ -1,0 +1,20 @@
+{
+  "name": "dexi",
+  "interface": {
+    "displayName": "Dexi"
+  },
+  "plugins": [
+    {
+      "name": "dexi",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dexi"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
